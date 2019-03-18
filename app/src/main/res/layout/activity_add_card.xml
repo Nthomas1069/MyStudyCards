@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <TextView
+        android:id="@+id/deckToAddTo"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="54dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/addQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/addQuestion"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/addAnswer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deckToAddTo">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputAddQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputNewQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type question..."
+                android:keyboardNavigationCluster="true" />
+        </android.support.design.widget.TextInputLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/addAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/addCardButton"
+        app:layout_constraintEnd_toEndOf="@+id/addQuestion"
+        app:layout_constraintStart_toStartOf="@+id/addQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/addQuestion">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputAddAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputNewA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type answer..."
+                android:keyboardNavigationCluster="true" />
+        </android.support.design.widget.TextInputLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/addCardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:text="Add Card"
+        android:onClick="addCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAnswer" />
+</android.support.constraint.ConstraintLayout>

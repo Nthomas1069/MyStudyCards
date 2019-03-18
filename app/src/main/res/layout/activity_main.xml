@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mscMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="33dp"
+        android:text="My Study Cards"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="@android:color/white"
+        android:textSize="45sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/myDecksTitle"
+        app:layout_constraintStart_toStartOf="@+id/myDecksTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="My Study Cards"
+        tools:textColor="@android:color/white"
+        tools:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/myDecksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="25dp"
+        android:text="My Decks"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/deckList"
+        app:layout_constraintStart_toStartOf="@+id/deckList"
+        app:layout_constraintTop_toBottomOf="@+id/mscMainTitle"
+        tools:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/deckList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/darker_gray"
+        android:cacheColorHint="@android:color/darker_gray"
+        android:isScrollContainer="true"
+        android:scrollIndicators="right"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textColor="@android:color/white"
+        android:textFilterEnabled="false"
+        android:verticalScrollbarPosition="right"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDecksTitle" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputNewDeck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="new deck name..."
+            android:textColorLink="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/addDeckButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:text="ADD"
+        android:onClick="add"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/addDeckTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:text="New Deck"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

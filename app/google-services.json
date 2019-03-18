@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "427612643459",
+    "firebase_url": "https://my-study-cards.firebaseio.com",
+    "project_id": "my-study-cards",
+    "storage_bucket": "my-study-cards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427612643459:android:7a8ca57f96228ee4",
+        "android_client_info": {
+          "package_name": "edu.regis.thomas.mystudycards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427612643459-i4l6pgaags2975rogd7se2batn3t5p31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAes3lx4IIJe9ZGFV31KzBnBf859FLk6-A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
